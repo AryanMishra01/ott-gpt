@@ -1,4 +1,11 @@
 # Getting Started with Create React App
+- Create react app
+- Tailwind configured
+- Header
+- Login form
+- Sign up form
+- Validation in form (YOU CAN USE FORMIK for bigger applications)
+
 
 # Incase of npm ERRno -4058; which indicates that a file or directory is missing:
 
@@ -35,3 +42,22 @@ This command will create a Scafold. Just like we use Parcel bundler in our proje
 - NetflixGPT 
    -  Search Bar
    -  Movie Suggestions 
+
+# Install Extention of ES7+ React/Redux/React-Native snippets
+  - enable use of shortcut keys 
+
+# Create basic Login, Header, Browse and Body component.
+# Import Body component in App.js
+
+# Setup rounting:
+  - npm i -D react-router-dom
+  - createBrowserRouter in Body component
+  - To provide route => import Router provider in Body Component and pass appRouter to it.
+
+# To find of Images in a page
+  - go to network tab
+  - select img tab and refresh the page.
+
+
+
+  
