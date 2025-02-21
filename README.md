@@ -13,7 +13,20 @@
 - Deploying app to production
 - Link  https://ott-gpt-26047.web.app
 - Create Signup User Account
-- Setup Redux
+- Setup Redux to store Sign in and Sign up data with userSlice.
+- Update store as per login in and logout=> 
+   - We will use utility given by FIREBASE:
+   - onAuthStateChanged => refer Link: https://firebase.google.com/docs/auth/web/manage-users?hl=en&authuser=0
+   - Since we only want to use it only once, we would call in useEffect in Body component.
+   - dispatch in the function =>  onAuthStateChanged 
+   - navigate in the Login page. 
+- Implemented SignOut
+- Update Profile
+- Fetch movies from TMDB API
+
+
+
+
 
 # Incase of npm ERRno -4058; which indicates that a file or directory is missing:
 
@@ -123,4 +136,14 @@ This command will create a Scafold. Just like we use Parcel bundler in our proje
  - use Web modular API
  - https://firebase.google.com/docs/auth/web/password-auth
  - follow the steps.
- - Past const export auth = getAuth(); in firebase.js
+ - Paste const export auth = getAuth(); in firebase.js
+
+# Setting up Redux toolkit
+  -  npm i -D @reduxjs/toolkit
+  -  npm i react-redux
+  -  Build a store ->  create appStore.js
+  - Create user slice -> create userSlice.js
+  - import slice in appStore
+  - To provide store to the app => provide store at the root of application i.e App.js
+  - Created Redux store with userSlice.
+
