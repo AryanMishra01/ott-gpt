@@ -22,8 +22,35 @@
    - navigate in the Login page. 
 - Implemented SignOut
 - Update Profile
+- Important Fixing bugs:
+   - user should not route to Browse page manually.
+   - if trying to manually route to Browse page, it should go to login page only.
+   -Solution: check Header page.
+- Unsubscribed to the onAuthStateChanged callback. in Header.js
+- Add hardcoded values to Constants.js
 - Fetch movies from TMDB API
+   - create an account
+   - Go to documents-> Api references -> movie api -> now playing.
+   - get the options method in constants.js file. 
+   - set up api call in Browse page.
+- Create custom hook: useNowPLayingMovies
+   - Created a function to fetch data from API and store it in moviesSlice and update store.
+   - imported it in Browse.js
 
+- LETs START BUILDING BROWSER PAGE.
+    - Main Container: (MainContainer.js)
+       - Only movie data is needed for it.
+       - Video Title. (VideoTitle.js)
+       - Video Trailer Background. (VideoBackground.js)
+    - Secondary Container: (SecondaryContainer.js)
+       - Movies List *n
+       - Cards *n
+
+
+
+
+
+# In local we might see api calls or events called twice, this only happend because our app is running with React.StrictMode, which checks for any inconsistences in the app, this won't be visibile in production.
 
 
 
