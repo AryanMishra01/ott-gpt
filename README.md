@@ -44,7 +44,24 @@
        - Video Trailer Background. (VideoBackground.js)
     - Secondary Container: (SecondaryContainer.js)
        - Movies List *n
+         - Movie list - Popular
+         - Movie list - Now Playing
+         - Movie list - Trending
        - Cards *n
+
+- Fetch Data for trailer video
+- upated store with Trailer Video Data
+- Embedded the youtube video and make it autoplay and mute.
+- Updated tailwind css for title and discription.
+- Creating movie suggestion list for Secondary container.
+- Build Secondary Component
+- Build Movie List
+- TMDB Image CDN url
+- Made the Browse page better with Tailwind CSS
+- Created usePopularMovies, useTopRatedMovies, useTrendingMovies custom hooks.
+
+
+
 
 
 
