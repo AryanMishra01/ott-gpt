@@ -62,7 +62,9 @@
 - GPT SEARCH FEATURE.
 - GPT Search bar
 - Multi-lang feature in our App.
-- Intergrate GPT APIs
+- Intergrate Gemini/GPT APIs
+- Securing api keys .env file
+
 
 
 
