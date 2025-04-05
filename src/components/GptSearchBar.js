@@ -41,16 +41,16 @@ const GptSearchBar = () => {
       const gptMovies =
         geminiResult.candidates?.[0]?.content?.parts?.[0]?.text.split(",");
       // [Movie1, Movie2, Movie3, Movie4]
-      console.log(
-        "gptMovies",
-        geminiResult.candidates?.[0]?.content?.parts?.[0]?.text.split(",")
-      );
+      // console.log(
+      //   "gptMovies",
+      //   geminiResult.candidates?.[0]?.content?.parts?.[0]?.text.split(",")
+      // );
       // for each movie, search TMDB API
       const promiseArray = gptMovies.map((movie) => searchMovieTMDB(movie));
       // [Promise, Promise, Promise, Promise, Promise]
       //console.log("promiseArray", promiseArray);
       const tmdbResults = await Promise.all(promiseArray);
-      console.log("tmdbSearchResult", tmdbResults);
+      //console.log("tmdbSearchResult", tmdbResults);
 
       dispatch(
         addGptMovieResult({
@@ -65,9 +65,9 @@ const GptSearchBar = () => {
   };
 
   return (
-    <div className="pt-[10%] flex justify-center">
+    <div className="pt-[45%] md:pt-[10%] flex justify-center">
       <form
-        className=" w-1/2 bg-black grid grid-cols-12"
+        className="w-full md:w-1/2 bg-black grid grid-cols-12"
         onSubmit={(e) => e.preventDefault()}
       >
         <input

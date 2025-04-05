@@ -62,8 +62,15 @@
 - GPT SEARCH FEATURE.
 - GPT Search bar
 - Multi-lang feature in our App.
-- Intergrate Gemini/GPT APIs
+- Intergrate Gemini/GPT APIs 
+- fetched gptMoviesSuggestions form TMDB
+- created gptSlice added data.
+- Reused MovieList component to make movie suggestion container.
 - Securing api keys .env file
+- Adding .env file to gitignore
+- Memoization
+- Creating the site responsive. md (medium device)
+
 
 
 
